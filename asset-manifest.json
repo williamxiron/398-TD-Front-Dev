@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/398-TD-Front-Dev/static/css/main.61d8106a.css",
-    "main.js": "/398-TD-Front-Dev/static/js/main.65570c7f.js",
+    "main.js": "/398-TD-Front-Dev/static/js/main.bad47876.js",
     "static/media/yard.svg": "/398-TD-Front-Dev/static/media/yard.3b4c40defda2b47ff5e17c416ccb281f.svg",
     "static/media/404.svg": "/398-TD-Front-Dev/static/media/404.858d58434ee5914db61db528479c340f.svg",
     "static/media/stock-image.jpeg": "/398-TD-Front-Dev/static/media/stock-image.8c84566a7ea4355ab04c.jpeg",
@@ -11,10 +11,10 @@
     "static/media/bus.svg": "/398-TD-Front-Dev/static/media/bus.18d85b3fa4a9f201892e27b7c4cdce10.svg",
     "index.html": "/398-TD-Front-Dev/index.html",
     "main.61d8106a.css.map": "/398-TD-Front-Dev/static/css/main.61d8106a.css.map",
-    "main.65570c7f.js.map": "/398-TD-Front-Dev/static/js/main.65570c7f.js.map"
+    "main.bad47876.js.map": "/398-TD-Front-Dev/static/js/main.bad47876.js.map"
   },
   "entrypoints": [
     "static/css/main.61d8106a.css",
-    "static/js/main.65570c7f.js"
+    "static/js/main.bad47876.js"
   ]
 }
