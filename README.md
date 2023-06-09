@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Getting Started
+
+Please ensure you have downloaded the latest version of Node (v18.16) [here](https://nodejs.org/en/download)
 
 This project was bootstrapped with [Themesberg's Volt React Dashbaord](https://github.com/themesberg/volt-react-dashboard).
 
