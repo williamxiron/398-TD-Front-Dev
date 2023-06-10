@@ -4,7 +4,7 @@ import { Image } from '@themesberg/react-bootstrap';
 
 import TransDevLogo from '../assets/img/brand/red.svg'
 
-export default (props) => {
+const Preloader = (props) => {
 
   const { show } = props;
 
@@ -14,3 +14,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default Preloader;

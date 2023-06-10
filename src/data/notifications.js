@@ -1,7 +1,7 @@
 
 import busSVG from "../assets/img/illustrations/bus.svg";
 
-export default [
+const notifications = [
     {
         "id": 1,
         "read": false,
@@ -21,3 +21,5 @@ export default [
         "message": `Available for Bay Assignment.`
     },
 ]
+
+export default notifications;

@@ -3,7 +3,7 @@ import { Route, Routes, Outlet } from "react-router-dom";
 import { RoutesURI } from "./routes";
 
 // Components
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
 import Sidebar from "./components/Sidebar";
@@ -33,7 +33,7 @@ const TopbarLayout = () => {
         <Outlet/> 
 
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
@@ -54,7 +54,7 @@ const SidebarLayout = () => {
       <main className="content">
         <Navbar />
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </>
   );
@@ -71,11 +71,11 @@ function App() {
       </Route>
 
       <Route element={<SidebarLayout/>}>
-        <Route exact path={RoutesURI.DashboardOverview.path} element={<DashboardOverview/>} />
-        <Route exact path={RoutesURI.Users.path}             element={<Users/>}             />
-        <Route exact path={RoutesURI.Shifts.path}            element={<Shifts/>}            />
-        <Route exact path={RoutesURI.Bays.path}              element={<Bays/>}              />
-        <Route exact path={RoutesURI.Buses.path}             element={<Buses/>}             />
+        <Route path={RoutesURI.DashboardOverview.path} element={<DashboardOverview/>} />
+        <Route path={RoutesURI.Users.path}             element={<Users/>}             />
+        <Route path={RoutesURI.Shifts.path}            element={<Shifts/>}            />
+        <Route path={RoutesURI.Bays.path}              element={<Bays/>}              />
+        <Route path={RoutesURI.Buses.path}             element={<Buses/>}             />
       </Route>
     </Routes>
   );

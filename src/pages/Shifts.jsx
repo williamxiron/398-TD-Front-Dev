@@ -5,7 +5,7 @@ import { Col, Row, Form, Button, ButtonGroup, Breadcrumb, InputGroup, Dropdown }
 
 import { ShiftsTable } from "../components/Tables";
 
-export default () => {
+const Shifts = () => {
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
@@ -55,3 +55,5 @@ export default () => {
     </>
   );
 };
+
+export default Shifts;

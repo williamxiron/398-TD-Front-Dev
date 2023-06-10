@@ -5,7 +5,7 @@ import { Col, Row, Form, Button, ButtonGroup, Breadcrumb, InputGroup, Dropdown }
 
 import { BusesTable } from "../components/Tables";
 
-export default () => {
+const Buses = () => {
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
@@ -55,3 +55,5 @@ export default () => {
     </>
   );
 };
+
+export default Buses;

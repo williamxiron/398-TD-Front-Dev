@@ -1,4 +1,4 @@
-import { Col, Row, Card, Image } from '@themesberg/react-bootstrap';
+import { Card } from '@themesberg/react-bootstrap';
 
 export const DropArea = (props) => {
     return (

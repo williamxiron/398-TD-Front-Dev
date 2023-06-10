@@ -7,7 +7,7 @@ import { BayBusesTable } from "../components/Tables";
 import { EditBay } from "../components/Forms";
 import { DropArea } from "../components/DropArea"
 
-export default () => {
+const Bays = () => {
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
@@ -42,3 +42,5 @@ export default () => {
     </>
   );
 };
+
+export default Bays;

@@ -1,6 +1,6 @@
 import moment from "moment-timezone";
 
-export default [
+const usersTemp = [
   {
     "userNumber": 1,
     "status": "Active",
@@ -82,3 +82,5 @@ export default [
     "lastUpdated": moment().subtract(3, "days").format("DD MMM YYYY"),
   },
 ];
+
+export default usersTemp;

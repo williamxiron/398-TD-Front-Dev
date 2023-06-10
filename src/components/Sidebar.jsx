@@ -3,14 +3,13 @@ import SimpleBar from 'simplebar-react';
 import { useLocation } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faUsers, faSquareParking, faBusSimple, faSignOutAlt, faTimes, faRectangleList } from "@fortawesome/free-solid-svg-icons";
-import { Nav, Badge, Image, Button, Navbar, NavbarBrand } from '@themesberg/react-bootstrap';
+import { faChartLine, faUsers, faSquareParking, faBusSimple, faTimes, faRectangleList } from "@fortawesome/free-solid-svg-icons";
+import { Nav, Badge, Image, Button, Navbar } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import { RoutesURI } from "../routes";
 import TransDevLogo from "../assets/img/brand/light.svg";
 import TransDevLogoSmall from "../assets/img/brand/light-small.svg";
-import ProfilePicture from "../assets/img/team/stock-image.jpeg";
 
 
 export default function Sidebar() {

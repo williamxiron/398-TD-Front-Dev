@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faCog, faEnvelopeOpen, faSearch, faSignOutAlt, faUserShield } from "@fortawesome/free-solid-svg-icons";
-import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
+import { faBell, faCog, faSearch, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import { Row, Col, Nav, Form, Image, Navbar, Dropdown, Container, ListGroup, InputGroup } from '@themesberg/react-bootstrap';
 
-import { RoutesURI } from "../routes";
 import NOTIFICATIONS_DATA from "../data/notifications";
 import Profile3 from "../assets/img/team/stock-image.jpeg";
 
 
-export default (props) => {
+const NavBarComponent = (props) => {
   const [notifications, setNotifications] = useState(NOTIFICATIONS_DATA);
   const areNotificationsRead = notifications.reduce((acc, notif) => acc && notif.read, true);
 
@@ -110,3 +108,5 @@ export default (props) => {
     </Navbar>
   );
 };
+
+export default NavBarComponent;

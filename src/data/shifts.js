@@ -1,6 +1,6 @@
 import moment from "moment-timezone";
 
-export default [
+const shiftsTemp = [
   {
     shiftNumber: 1,
     status: "Parked",
@@ -102,3 +102,5 @@ export default [
     bayNumber: 104,
   },
 ];
+
+export default shiftsTemp;

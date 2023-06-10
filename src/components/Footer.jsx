@@ -5,7 +5,7 @@ import moment from "moment-timezone";
 import { Row, Col, Card } from '@themesberg/react-bootstrap';
 import { RoutesURI } from "../routes";
 
-export default (props) => {
+const Footer = (props) => {
   const currentYear = moment().get("year");
 
   return (
@@ -25,3 +25,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default Footer;

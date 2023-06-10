@@ -6,7 +6,7 @@ import { Col, Row, Button, Dropdown } from '@themesberg/react-bootstrap';
 import { CounterWidget, BigWidget } from "../components/Widgets";
 
 
-export default () => {
+const DashboardOverview = () => {
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
@@ -76,3 +76,5 @@ export default () => {
     </>
   );
 };
+
+export default DashboardOverview;

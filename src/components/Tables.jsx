@@ -10,8 +10,9 @@ import busesTemp from "../data/buses";
 export const UsersTable = () => {
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
   const gridStyle = useMemo(() => ({ height: '593px', width: '100%' }), []);
-  const [rowData, setRowData] = useState(); 
-  const [columnDefs, setColumnDefs] = useState([
+  const [rowData, setRowData] = useState();
+  // Add setColumnDefs as required
+  const [columnDefs] = useState([
     { headerCheckboxSelection: true, checkboxSelection: true, headerName: "User #", field: "userNumber",      resizable: false, filter: true, sortable: true, flex: 1, minWidth: 150 },
     { headerName: "Full Name",    field: "fullName",    resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
     { headerName: "Role", field: "role", resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
@@ -62,8 +63,9 @@ export const UsersTable = () => {
 export const ShiftsTable = () => {
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
   const gridStyle = useMemo(() => ({ height: '593px', width: '100%' }), []);
-  const [rowData, setRowData] = useState(); 
-  const [columnDefs, setColumnDefs] = useState([
+  const [rowData, setRowData] = useState();
+  // Add setColumnDefs as required 
+  const [columnDefs] = useState([
     { headerCheckboxSelection: true, checkboxSelection: true, headerName: "Shift #",      field: "shiftNumber",      resizable: false, filter: true, sortable: true, flex: 1, minWidth: 150 },
     { headerName: "Driver",    field: "driverName",    resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
     { headerName: "Start", field: "startTime", resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
@@ -116,8 +118,9 @@ export const ShiftsTable = () => {
 export const BusesTable = () => {
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
   const gridStyle = useMemo(() => ({ height: '593px', width: '100%' }), []);
-  const [rowData, setRowData] = useState(); 
-  const [columnDefs, setColumnDefs] = useState([
+  const [rowData, setRowData] = useState();
+  // Add setColumnDefs as required 
+  const [columnDefs] = useState([
     { headerCheckboxSelection: true, checkboxSelection: true, headerName: "Bus #",      field: "busNumber",      resizable: false, filter: true, sortable: true, flex: 1, minWidth: 150 },
     { headerName: "Bus Type",    field: "busType",    resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
     { headerName: "Bay #", field: "bayNumber", resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
@@ -167,7 +170,8 @@ export const BayBusesTable = () => {
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
   const gridStyle = useMemo(() => ({ height: '593px', width: '100%' }), []);
   const [rowData, setRowData] = useState(); 
-  const [columnDefs, setColumnDefs] = useState([
+  // Add setColumnDefs as required
+  const [columnDefs] = useState([
     { rowDrag: true, headerName: "Bus #", field: "busNumber", resizable: false, filter: true, sortable: true, flex: 1, minWidth: 150 },
     { headerName: "Bus Type",    field: "busType",    resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
     { headerName: "Bay #", field: "bayNumber", resizable: false, filter: true, sortable: true, flex: 1, minWidth: 200 },
@@ -194,8 +198,9 @@ export const BayBusesTable = () => {
     // })
     addDropZones(params);
     setRowData(busesTemp);
-  }, []);
+  }, [addDropZones]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function addDropZones(params) {
     var tileContainer = document.querySelector('.tile-container');
     var dropZone = {

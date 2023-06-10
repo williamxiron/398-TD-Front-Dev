@@ -1,6 +1,4 @@
-import moment from "moment-timezone";
-
-export default [
+const buses = [
   {
     "busNumber": 1,
     "status": "Parked",
@@ -62,3 +60,5 @@ export default [
     "bayNumber": 112
   }
 ];
+
+export default buses;
